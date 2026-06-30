@@ -1,0 +1,225 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= MAIN WRAPPER ================= */
+
+.main {
+  margin: 200px auto 100px;
+  padding: 0 20px;
+}
+
+/* ================= LAYOUT ================= */
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1400px;
+}
+
+/* ================= LEFT CONTENT ================= */
+
+.component {
+  background-color: #13c5dd;
+  padding: 80px 60px;
+  border-radius: 12px;
+  flex: 1;
+  min-height: 550px;
+}
+
+/* ================= TEXT ================= */
+
+.appoint-head {
+  color: #ffffff;
+  display: inline-block;
+  border-bottom: 5px solid #ffffff;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.appoint-sub-head {
+  color: #1d2a4d;
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.appoint-para {
+  margin-top: 30px;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ================= BUTTONS ================= */
+
+.button {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.doctor,
+.read {
+  min-width: 180px;
+  height: 55px;
+  border-radius: 50px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.doctor {
+  background-color: #1d2a4d;
+  color: #ffffff;
+}
+
+.read {
+  background-color: #13c5dd;
+  color: #1d2a4d;
+  border: 2px solid #1d2a4d;
+}
+
+.read:hover {
+  background-color: #1d2a4d;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+/* ================= FORM CARD ================= */
+
+.application-form {
+  background: #ffffff;
+  padding: 50px 40px;
+  border-radius: 12px;
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.15);
+  flex: 1;
+  max-width: 500px;
+}
+
+.application-form-heading {
+  font-size: 32px;
+  color: #1d2a4d;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ================= FORM ================= */
+
+.application-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row-form {
+  display: flex;
+  gap: 20px;
+}
+
+.dd,
+.application-form input {
+  width: 100%;
+  padding: 18px;
+  border-radius: 8px;
+  border: none;
+  background: #f1f6f9;
+  font-size: 15px;
+  outline: none;
+}
+
+.application-form button {
+  background: #13c5dd;
+  color: #fff;
+  border: none;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.application-form button:hover {
+  background: #0fb3c9;
+}
+
+/* ================= TABLET ================= */
+
+@media (min-width:1200px) and (max-width:2000px)
+{
+    .main{
+      margin-top:-180px !important;
+      /* border: 1px solid red; */
+    }
+    
+
+}
+
+@media (max-width: 1024px) {
+  .main {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .component {
+    padding: 60px 40px;
+  }
+
+  .appoint-sub-head {
+    font-size: 36px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .component {
+    padding: 40px 30px;
+  }
+
+  .appoint-sub-head {
+    font-size: 30px;
+  }
+
+  .row-form {
+    flex-direction: column;
+  }
+
+  .button {
+    justify-content: center;
+  }
+
+  .application-form {
+    width: 100%;
+    padding: 35px 25px;
+  }
+
+  .application-form-heading {
+    font-size: 26px;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+  .appoint-sub-head {
+    font-size: 26px;
+  }
+
+  .appoint-para {
+    font-size: 14px;
+  }
+
+  .doctor,
+  .read {
+    width: 100%;
+  }
+}

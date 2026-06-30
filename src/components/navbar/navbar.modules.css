@@ -1,0 +1,316 @@
+
+
+#main-nav{
+   
+    height: 90px;
+    background-color: white;
+    display: flex;
+    align-items: center;    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0px 0px 20px gray;
+    z-index: 99;
+    /* border: 1px solid red; */
+}
+
+
+#main-nav img{
+    width: 150px;
+    height: 100%;
+    /* border: 1px solid red; */
+    margin-left: 10px;
+    /* box-shadow: 0 0 10px violet; */
+
+}
+
+
+
+#navbar-box h1{
+    color: #06cae4;
+    font-size: 40px;
+    font-family: sans-serif;
+    /* border: 1px solid red; */
+    /* width: 10%; */
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    position: relative;
+
+   
+    
+}
+
+#navbar-box h1::after{
+    content: "";
+    background-color: #06cae4;
+    transition: width 0.4s ease;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 0%;
+    height: 4px;
+}
+
+
+#navbar-box h1:hover::after{
+    width: 100%;
+}
+
+#nav-item{
+    /* border: 1px solid red; */
+    width: 35%;
+    display: flex;
+    position: absolute;
+    right: 10px;
+   
+    /* justify-content: center; */
+    margin-left:300px;
+}
+
+#nav-item h4{
+    cursor: pointer;
+    font-size: 20PX;
+    margin-top: 25px;
+    border-bottom: 4px solid white;
+    padding: 20px;
+
+    position: relative;
+
+}
+
+#nav-item h4:hover{
+    color: #06cae4;
+    /* border-bottom: 4px solid #06cae4; */
+    
+    
+
+}
+
+#nav-item h4::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 0%;
+    height: 4px;
+    background-color: #06cae4;
+    transition: width 0.4s ease;
+}
+
+#nav-item h4:hover::after{
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* ....................... */
+
+
+#gmail{
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* margin-left: 90px; */
+    cursor: pointer;
+        /* border-bottom: 1px solid rgb(180, 179, 179); */
+        /* border-width: 100%; */
+        margin-top: 90px;
+       
+
+}
+
+#gmail p{
+    width: 13%;
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: 15px;
+    margin-right: 100px;
+    
+}
+
+#cg_icon{
+    /* border: 1px solid red; */
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+
+
+
+#call_icon{
+    /* border: 1px solid red; */
+    width: 5% !important;
+    /* margin-left: 50px; */
+    height: 55%;
+}
+
+
+
+
+
+
+
+#mail_icon{
+    margin-left: -90px;
+    border-left: 1px solid gray;
+    width: 60px;
+    /* height: 65% !important;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    /* border: 1px solid red;/ */
+
+}
+
+#face{
+    /* border: 1px solid red; */
+    width: 20% !important;
+    height: 100%;
+    /* margin-left: 600px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+
+    /* border: 1px solid red; */
+
+}
+
+#face i{
+    color: rgb(109, 109, 109);
+    cursor: pointer;
+    /* border: 1px solid red; */
+    margin-left: 20px;
+    font-size: 20px;
+
+}
+
+#face i:hover{
+    color: #06cae4;
+    /* border: 1px solid red; */
+
+}
+
+.menu-icon{
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.logo-box{
+    display: flex;
+    align-items: center;
+}
+
+/* =====================
+   MENU DEFAULT (DESKTOP)
+===================== */
+@media (min-width:900px) and (max-width: 1324px)
+{
+    #nav-item{
+        /* border: 1px solid red; */
+        width: auto;
+
+    }
+
+      #call_num{
+        font-size: 12px !important;
+        /* border: 1px solid red !important; */
+    }
+}
+
+
+/* =====================
+   TABLET & MOBILE
+===================== */
+
+@media (max-width: 899px) {
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        z-index: 100;
+        /* border: 1px solid red; */
+    }
+
+    #nav-item {
+        position: fixed;
+        top: 89px;
+        right: -100%;
+        width: 260px;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 40px;
+        transition: right 0.4s ease;
+        /* box-shadow: 0 0 15px rgba(0,0,0,0.2); */
+        box-shadow: 3px 20px 10px 10px rgba(0,0,0,0.2);
+        margin-left: 0;
+        z-index: 99;
+    }
+
+    #nav-item h4 {
+        margin: 15px 0;
+        font-size: 18px;
+    }
+
+    /* ACTIVE STATE */
+    #nav-item.nav-active {
+        right: 0;
+    }
+
+    /* #call_num{
+        font-size: 13px !important;
+        border: 1px solid red;
+    } */
+}
+
+/* =====================
+   MOBILE EXTRA FIX
+===================== */
+
+@media (max-width: 899px) {
+
+    #navbar-box h1 {
+        font-size: 28px;
+    }
+
+    #main-nav img {
+        width: 120px;
+    }
+
+    #gmail {
+       display: none !important;
+    }
+
+     
+
+
+}
+
+
+
+
+/* .......... */
+
+
+
+
+

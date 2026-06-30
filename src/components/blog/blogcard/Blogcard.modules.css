@@ -1,0 +1,103 @@
+#card{
+    width: 32%;
+    min-width: 280px;
+    border-radius: 15px;
+    background-color: rgb(243, 243, 243);
+    overflow: hidden;
+    /* border: 1px solid red; */
+    height: auto;
+}
+
+/* #card :hover{
+    box-shadow: 0 0 10px gray;
+} */
+
+
+
+#card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 0 !important;
+}
+
+#card h3{
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#card p{
+    color: gray;
+    font-size: 14px;
+    padding: 0 15px;
+}
+
+/* icons */
+#b-icon{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around; /* ⭐ margin-left hataya */
+    align-items: center;
+    box-shadow: 0 0 5px gray;
+
+    /* border: 1px solid red; */
+}
+
+
+
+#b-icon i{
+    font-size: 18px;
+    color: #01b6cee1;
+    cursor: pointer;
+}
+
+#b-icon h6{
+    margin-top: 6px;
+    font-size: 13px;
+}
+
+/* =======================
+   MEDIA QUERIES
+======================= */
+
+/* Tablet */
+@media (max-width: 992px){
+    #card{
+        width: 45%;
+    }
+
+    #blog_box h1{
+        font-size: 40px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px){
+    #card{
+        width: 100%;
+    }
+
+    #blog_box h1{
+        font-size: 30px;
+    }
+
+    #blog_box h2{
+        font-size: 24px;
+    }
+}
+
+
+@media (min-width:1200px) and (max-width:2000px)
+{
+    #blog_box{
+      margin-top: 100px !important;
+      /* border: 1px solid red; */
+    }
+    
+
+}
+
+

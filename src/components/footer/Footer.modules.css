@@ -1,0 +1,235 @@
+
+
+/* ================= FOOTER BASE ================= */
+
+.footer-container-start {
+  background-color: #1d2a4d;
+  /* border: 1px solid red; */
+
+  /* padding-top: 120px; */
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  background-color: #1d2a4d;
+}
+
+/* ================= FOOTER COLUMN ================= */
+
+.footer-col {
+  flex: 1 1 220px;
+  max-width: 280px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-col h3 {
+  color: #00d2ff;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-bottom: 3px solid #0c1221;
+  padding-bottom: 5px;
+  width: fit-content;
+  
+}
+
+/* ================= TEXT & LINKS ================= */
+
+.footer-col p {
+  font-size: 15px;
+  line-height: 1.6;
+  /* border: 1px solid red; */
+  color: #ddd;
+  text-align: center;
+  margin: 0;
+  /* margin-top: 15px; */
+  /* padding: 10px; */
+ 
+}
+
+
+
+
+.location-holder {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* border: 1px solid red; */
+  /* justify-content: center; */
+}
+
+.loc-icon {
+  color: #00d2ff;
+  margin-top: 3px;
+  /* border: 1px solid red; */
+  align-items: flex-start !important;
+}
+
+/* ================= NEWSLETTER ================= */
+
+.footer-col-newsletter {
+  flex: 1 1 300px;
+  max-width: 350px;
+}
+
+.newsletter-box {
+  display: flex;
+  gap: 10px;
+}
+
+.newsletter-box input {
+  flex: 1;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.newsletter-box button {
+  background-color: #00d2ff;
+  border: none;
+  padding: 14px 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+/* ================= SOCIAL ================= */
+
+.follow-header {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-icon-holder {
+  display: flex;
+  gap: 12px;
+}
+
+.contact-icon {
+  width: 28px;
+  height: 28px;
+  color: #00d2ff;
+  cursor: pointer;
+}
+
+/* ================= BOTTOM FOOTER ================= */
+
+.last-footer-holder {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d2a4d;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.last-msg-holder-left,
+.last-msg-holder-right {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.mid-msg {
+  color: #00d2ff;
+}
+
+.copy-icon,
+.last-msg {
+  color: white;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+  .footer-container {
+    justify-content: center;
+  }
+
+  .footer-col {
+    max-width: 45%;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-col {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .location-holder {
+    justify-content: center;
+  }
+
+  .newsletter-box {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .newsletter-box input,
+  .newsletter-box button {
+    width: 100%;
+  }
+
+  .contact-icon-holder {
+    justify-content: center;
+  }
+
+  .last-footer-holder {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+  .footer-col h3 {
+    font-size: 16px;
+  }
+
+  .footer-col p {
+    font-size: 14px;
+  }
+
+  .last-msg-holder-left,
+  .last-msg-holder-right {
+    font-size: 13px;
+  }
+}
+
+@media (min-width:1200px) and (max-width:2000px)
+{
+    .footer-container-start{
+      margin-top: 150px !important;
+      /* border: 1px solid red; */
+    }
+    
+
+}
+
+

@@ -1,0 +1,277 @@
+/* =====================
+   CARD BOX
+===================== */
+#medical_packages_heading{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.medical-text {
+  color: #6c757d;
+  font-size: 17px;
+  margin-top: 12px;
+}
+
+
+
+#medical_packages_heading h1{
+    border-bottom: 4px solid rgb(165, 164, 164);
+    color: #14c6dc;
+    font-size: 25px;
+}
+
+#medical_packages_heading h2{
+    /* border: 1px solid red; */
+    color: #1d2a4d;
+    text-align: center;
+}
+
+
+
+#medial_box {
+    width: 100%;
+    max-width: 360px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 15px;
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0 0 10px #ddd;
+    overflow: hidden;
+    height: 700px;
+    /* border: 1px solid red; */
+}
+
+/* =====================
+   IMAGE
+===================== */
+
+#medial_box img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    /* border: 1px solid red; */
+    border-radius: 0 !important;
+}
+
+/* =====================
+   TEXT
+===================== */
+
+#h1,
+#h2,
+#h3,
+#h4 {
+    color: gray;
+    line-height: 1.4;
+    font-size: 18px;
+}
+
+#h1 {
+    margin-top: 25px;
+}
+
+/* =====================
+   BUTTON
+===================== */
+
+#apply_btn {
+    display: block;
+    margin: 20px auto;
+    font-weight: bold;
+}
+
+/* =====================
+   SLIDER
+===================== */
+
+.slick-slider {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.slick-slide {
+    display: flex !important;
+    justify-content: center;
+}
+
+
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    bottom: -70px;
+    top: auto;
+    z-index: 10;
+    width: 45px;
+    height: 45px;
+    
+}
+
+
+
+
+/* LEFT ARROW */
+.slick-prev {
+    left: 50%;
+    transform: translateX(-70px);
+}
+
+/* RIGHT ARROW */
+.slick-next {
+    left: 50%;
+    transform: translateX(20px);
+}
+
+/* ARROW ICON */
+.slick-prev:before,
+.slick-next:before {
+    font-size: 44px;
+    color: white;
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before {
+    color: rgb(38, 40, 40); 
+    transition: color 0.3s ease;
+}
+
+
+
+/* .......... */
+
+
+/* =========================
+   PRICING CURVE SECTION
+========================= */
+
+.pricing-section {
+    position: relative;
+    padding: 80px 0 200px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+
+/* CURVED BACKGROUND */
+.curve-bg {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 40%;
+    background-color: #14c6dc;
+    border-bottom-left-radius: 100% 100%;
+    border-bottom-right-radius: 100% 100%;
+    z-index: 1;
+}
+
+/* SLIDER ABOVE CURVE */
+.slider-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.slick-slide {
+    display: flex !important;
+    justify-content: center;
+}
+
+
+/* responsive */
+
+@media (min-width:900px) and (max-width:992px)
+{
+    .pricing-section{
+        margin: 0 !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .curve-bg {
+        width: 150%;
+        height: 55%;
+    }
+
+    .pricing-section{
+        margin-top: 800px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    #medial_box img {
+        height: 220px;
+    }
+
+    .pricing-section{
+        margin-top: 0 !important;       
+        /* border: 1px solid red !important; */
+    }
+
+    
+}
+
+@media (max-width: 576px) {
+    #medial_box img {
+        height: 200px;
+    }
+
+    #medical_box{
+        height: 500px !important;
+    }
+
+     #h1, #h2, #h3, #h4 {
+        font-size: 16px;
+    }
+
+    .curve-bg {
+        width: 180%;
+        height: 50%;
+    }
+
+     .slick-prev,
+    .slick-next {
+        bottom: -55px;
+        width: 34px;
+        height: 34px;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 32px;
+    }
+
+    .slick-prev {
+        transform: translateX(-55px);
+    }
+
+    .slick-next {
+        transform: translateX(10px);
+    }
+
+      .pricing-section{
+        margin-top: 10px;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

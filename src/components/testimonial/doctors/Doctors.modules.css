@@ -1,0 +1,30 @@
+.testimonial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+}
+
+img{
+    border-radius: 100%;
+}
+
+.description{
+    color: #848E9F;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.patient{
+    color: black;
+    font-size: 30px;
+}
+
+.profession{
+    color: #13C5DD;
+    font-size: 20px;
+}
+

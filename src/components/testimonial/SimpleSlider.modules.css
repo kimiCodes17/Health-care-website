@@ -1,0 +1,28 @@
+.card{
+    text-align: center;
+    padding-top: 50px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.service{
+    color: #13C5DD;
+    width: 150px;
+    /* text-align: center !important; */
+    /* display: inline-block; */
+    padding-bottom: 3px;
+    font-size: 20px;
+    border-bottom: 4px solid rgb(165, 164, 164);
+
+}
+.excellent{
+    color: #1D2A4D;
+    font-size: 60px;
+    padding-top: 25px;
+}
+
+
+html, body {
+  overflow-x: hidden;
+}

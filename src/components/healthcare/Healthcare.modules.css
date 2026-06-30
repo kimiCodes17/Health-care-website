@@ -1,0 +1,215 @@
+/* =========================
+   BASE FIX
+========================= */
+
+#find-doctor{
+    width: 100%;
+    min-height: 480px; /* fixed height hata di */
+    background-color: #13c5dd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+    margin-top: 150px;
+    text-align: center;
+    /* border: 1px solid red; */
+    /* height: auto; */
+}
+
+/* HEADINGS */
+#find-doctor h2{
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 4px solid rgb(165, 164, 164);
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+#find-doctor h1{
+    font-weight: bold;
+    color: #1d2a4d;
+}
+
+/* PARAGRAPH */
+#find-doctor p{
+    width: 100%;
+    max-width: 650px;
+    color: white;
+    margin-top: 15px;
+}
+
+#find-doctor span{
+    margin-left: 0;
+    display: block;
+}
+
+/* =========================
+   INPUT SECTION
+========================= */
+
+#inp{
+    width: 100%;
+    max-width: 900px;
+    margin-top: 25px;
+    /* border: 1px solid red; */
+
+}
+
+#drop{
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+
+/* SELECT */
+#select{
+    border: none;
+    outline: none;
+    height: 3.5rem;
+    padding: 0 15px;
+    border-right: 1px solid rgb(0, 0, 0);
+}
+
+/* INPUT */
+#inp input{
+    width: 100%;
+    outline: none;
+    height: 3.5rem;
+    border: none;
+    padding: 15px;
+}
+
+/* BUTTON */
+#inp button{
+    border: none;
+    background-color: rgba(15, 15, 255, 0.85);
+    color: white;
+    font-size: 18px;
+    padding: 0 25px;
+    cursor: pointer;
+}
+
+/* =========================
+   MOBILE (≤576px)
+========================= */
+@media (min-width:200px) and (max-width: 500px) {
+
+    #find-doctor h1{
+        font-size: 2rem;
+    }
+
+    #drop{
+        flex-direction: column;
+    }
+
+    #select,
+    #inp input,
+    #inp button{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    #inp button{
+        height: 3.2rem;
+        font-size: 16px;
+    }
+
+    #inp input{
+        /* border: 1px solid red; */
+        width: 100% !important;
+        margin-top: 5px;
+        border-radius: 10px;
+    }
+
+    #inp button{
+        /* border: 1px solid red; */
+        flex-direction: row;
+        width: 100% !important;
+        /* margin: 0 !important; */
+        margin-top: 5px !important;
+        border-radius: 10px;
+
+
+    }
+
+    #select{
+        width: 100% !important;
+        border-radius: 10px;
+        border: none;
+
+    }
+
+    #find-doctor{
+        margin-top: 1350px;
+    }
+}
+
+/* =========================
+   TABLET (≤768px)
+========================= */
+@media (min-width: 500px) and (max-width:1000px) {
+
+    #find-doctor{
+        /* margin: 0 !important; */
+        /* border: 1px solid red; */
+        margin-top: 450px;
+       
+    }
+
+    #find-doctor h1{
+        font-size: 2.5rem;
+    }
+
+    #drop{
+        flex-wrap: wrap;
+        /* border: 1px solid red; */
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #select{
+        width: 25%;
+    }
+
+    #inp input{
+        width: 60%;
+        /* border-radius: 10px; */
+    }
+
+    #inp button{
+        width: 15% !important;
+        /* margin-top: 10px; */
+        border-radius: 0px 10px 10px 0px;
+    }
+
+     
+}
+
+/* =========================
+   LARGE SCREEN (≥1200px)
+========================= */
+@media (min-width: 1200px){
+    #find-doctor{
+        padding: 60px 0;
+    }
+
+      /* #find-doctor{
+        margin-top: 0px ;
+    } */
+}
+
+
+@media (min-width:1200px) and (max-width:2000px)
+{
+    /* #find-doctor{
+        margin-top: 0px ;
+    } */
+    
+
+}
+

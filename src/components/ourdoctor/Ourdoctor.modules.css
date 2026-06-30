@@ -1,0 +1,55 @@
+#our_doctor{
+    width: 100%;
+    height: 800px;
+    /* border: 1px solid red; */
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+#our_doctor h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 50px;
+    /* border: 1px solid red; */
+    color: #1d2a4d;
+
+}
+
+#our_doctor h2{
+    text-align: center;
+    color: #13c5dd;
+    font-weight: bold;
+    border-bottom: 4px solid #bebebe;
+    width: 190px;
+    font-size: 25px;
+}
+
+/* card */
+
+#doctor_card{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+}
+
+
+
+@media (min-width:200px) and (max-width:1000px)
+{
+    #doctor_card{
+        flex-direction: column;
+        /* border: 1px solid red; */
+        height: auto;
+        padding: 5px;
+    }
+}
+

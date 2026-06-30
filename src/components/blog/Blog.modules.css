@@ -1,0 +1,38 @@
+#blog_box{
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 15px;
+}
+
+#blog_box h2{
+    text-align: center;
+    margin-top: 20px;
+    color: #01b6ce;
+    border-bottom: 4px solid #bebebe;
+    width: 170px;
+    font-size: 30px;
+}
+
+#blog_box h1{
+    text-align: center;
+    margin-top: 20px;
+    color: #1d2b3d;
+}
+
+/* cards wrapper */
+#blog-card{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;   /* ⭐ important */
+    /* border: 1px solid red; */
+}
+
+/* #blog-card :hover{
+    box-shadow: 0 0 10px gray;
+} */
